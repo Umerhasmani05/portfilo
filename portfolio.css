@@ -1,0 +1,251 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --accent-color: #00adb5;
+    --section-bg: #1e1e1e;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+}
+
+.header {
+    text-align: center;
+    padding: 4rem 2rem;
+    background-color: var(--section-bg);
+}
+
+.name {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.6rem 1.2rem;
+    background: var(--accent-color);
+    color: var(--text-color);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #028489;
+}
+
+.section {
+    padding: 3rem 2rem;
+    background-color: var(--bg-color);
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--accent-color);
+}
+
+.skills {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.skills li {
+    background-color: var(--section-bg);
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+}
+
+.project {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: var(--section-bg);
+    border-radius: 5px;
+}
+
+.project h3 {
+    margin-bottom: 0.5rem;
+}
+
+.project a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contact-form input,
+#contact-form textarea {
+    padding: 0.8rem;
+    background: var(--section-bg);
+    border: none;
+    color: var(--text-color);
+    border-radius: 4px;
+}
+
+#contact-form button {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.8rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#contact-form button:hover {
+    background: #028489;
+}
+
+.socials a {
+    color: var(--accent-color);
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: var(--section-bg);
+    color: #888;
+}
+
+nav {
+    color: wheat;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 22px;
+    justify-items: center;
+    width: 100%;
+    height: 75px;
+}
+
+nav .navbarsection {
+
+
+    display: flex;
+    justify-items: center;
+    margin-left: 34px;
+    gap: 34px;
+}
+
+nav .navbarsection a {
+    text-decoration: none;
+    color: wheat;
+}
+nav .navbarsection a:hover{
+    color: #028489;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transition-timing-function: ease-out
+}
+
+nav .logo {
+    font-weight: 800;
+    font-size: 20px;
+    justify-items: center;
+}
+/* General Reset */
+
+
+/* Smooth transition for all elements */
+* {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Navbar hover effect */
+.navbarsection div a {
+    color: #d48a8a;
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.navbarsection div a:hover {
+    background-color: #f0f0f0;
+    color: #007BFF;
+    border-radius: 5px;
+}
+
+/* Button transition */
+.btn {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Project cards */
+.project {
+    background-color: #bf7575;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Contact form input focus */
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    border-color: #007BFF;
+}
+
+/* Social links hover */
+.socials a {
+    margin-right: 10px;
+    color: #64a5b2;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #007BFF;
+}
